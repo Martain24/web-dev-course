@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apuntes 8</title>
+    <link
+      rel="stylesheet"
+      href="/Users/martinramiro/Desktop/Curso_web_development/Day_6/styles/apuntes.css"
+    />
+  </head>
+  <body>
+    <h1>Diferencias a la hora de estilizar Block e inline elements</h1>
+    <p>
+      Algo muy importante que no entendias antes es que el <b>margin</b> en los
+      inline elements solo funciona en los lados <b>derecho</b> e
+      <b>izquierdo</b>. Si pones margen arriba y abajo de un inline element
+      <b>no tendrá</b> ningún efecto sobre tu página web.
+      <br />
+      <br />
+      Otra cosa tremendamente <b>importante</b> de los inline elements es que el
+      padding añadido arriba y abajo se ve visualmente, pero no mueve el resto
+      de los elementos de lugar, es decir, si tenemos un párrafo y debajo de
+      dicho párrafo ponemos un inline element que tenga mucho padding hacia
+      arriba, problamente dicho padding acabe <b>tapando</b> a nuestro párrafo
+      porque el párrafo no se moverá hacia arriba para evitar ese padding del
+      inline element.
+      <br />
+      <br />
+      Algo muy tocho es que podemos hacer que un inline element actue como un
+      block element cambiando el atributo de display en CSS. Si ponemos display:
+      inline-block conseguiremos que nuestro elemento junte cosas de ambos
+      mundos y que los margin y los paddings de arriba y abajo funcionen, pero
+      que no ocupe todo el widht como lo haría un block element.
+    </p>
+
+    <h1>Margin collapsing</h1>
+    <p>
+      Cuando ponemos dos bloques uno después del otro el margen entre ellos será
+      el que tenga un mayor tamaño, es decir, no se sumarán márgenes. Por
+      ejemplo, si pones un h1 con margin-bottom de 40pt y un p debajo con
+      margin-top de 39pt la separación entre ambos será de 40pt porque es el
+      mayor de ambos, no será de 39pt ni tampooco de 79pt porque los margins no
+      se sumarán. En caso de que haya un inline block debajo con display:
+      inline-block entonces los márgenes <b>sí que se sumarán.</b>
+    </p>
+
+    <h1>Box shadow</h1>
+    <p>
+      Puedes darle una sombra a los blockes pa que quede bonita con block
+      shadow.
+    </p>
+
+    <h1>Negative margins</h1>
+    <p>
+      En el proyecto de la web_de_objetivos usas el negative margin para
+      conseguir que una imagen se ponga encima de un elemento de HTML. Son
+      fáciles de entender, basicamente le quita al margin original el numero
+      negativo que hayas puesto.
+      <br />
+      <br />
+      Cosulta
+      <a
+        href="https://www.quirksmode.org/blog/archives/2020/02/negative_margin.html"
+        >aquí</a
+      >
+      para más información.
+    </p>
+    <h1>CSS Selectors</h1>
+    <p>
+      <a
+        href="https://www.udemy.com/course/100-days-of-code-web-development-bootcamp/learn/lecture/27970114?start=0#questions"
+        >aquí</a
+      >
+      tienes una lista de los CSS selectors que puedes usar para organizar tu
+      código.
+    </p>
+  </body>
+</html>

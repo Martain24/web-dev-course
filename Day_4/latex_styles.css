@@ -1,0 +1,23 @@
+h1 {
+  font-size: 35pt;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 200pt;
+  background-color: #f3efe0;
+  color: #434242;
+}
+
+p {
+  font-size: 20pt;
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  margin-left: 180pt;
+  margin-right: 200pt;
+  margin-top: 30pt;
+  line-height: 35pt;
+  background-color: #f3efe0;
+  color: #434242;
+}
+
+body {
+    background-color: #f3efe0;
+}

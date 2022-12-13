@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apuntes 7</title>
+    <link
+      rel="stylesheet"
+      href="/Users/martinramiro/Desktop/Curso_web_development/Day_6/styles/apuntes.css"
+    />
+  </head>
+  <body>
+    <h1>Introducción a la CSS box model</h1>
+    <p>
+      CSS considera que todos los elementos HTML están metidos en una caja. La
+      caja tiene metido el contenido del elemento, por ejemplo, si tenemos un
+      párrafo dentro de la caja tendremos los que hayamos escrito en dicho
+      parráfo. Alrededor del contenido tenemos el <b>padding</b> que es el
+      espacio entre el contenido y los <b>bordes</b> de la caja. El background
+      de la caja sería el espacio ocupado por el contenido y el <b>padding</b>.
+      <br />
+      <br />
+      Entonces después del padding tenemos el <b>border</b> que recuerda que lo
+      podemos cambiar con <i>border radius</i> para que sea redondo. También
+      podemos cambiar el border en sí, podemos cambiar el color del border, su
+      grosor, si se hace con una línea discontinua o no, etc.
+      <br />
+      <br />
+      Después, alrededor del border, tenemos el margin. El margin es el espacio
+      que queda entre la caja del elemento y los demás elementos que tiene
+      alrededor.
+      <br />
+      <br />
+      Veamos un ejemplo:
+      <br />
+      p { <br />
+      padding: 2px 5px 2px 5px; <br />
+      border:2px dashed black; <br />
+      margin: 8px 6px; <br />
+      marging:8px <br />
+      }
+      <br />
+      Con esto estaríamos marcando que nuestro párrafo tiene que tener 2px de
+      padding arriba, 5px a la derecha, 2px abajo y 5 px a la izquierda. Fíjate
+      que es como las agujas del reloj y no hay espacios.
+      <br />
+      <br />
+      El borde sería 2px de ancho, sería dashed y negro. tienen que ir en este
+      orden y sin comas
+      <br />
+      <br />
+      Si solo ponemos 2 datos como en margin estaríamos marcado espacio arriba y
+      abajo en ese orden
+      <br />
+      <br />
+      Si simplemente ponemos <b>margin: 8px</b> se aplicarían esos 8px de margin
+      sobre todos los lados.
+    </p>
+    <h1>Usando Box model</h1>
+    <p>
+      Lo de margin auto te sive para que de forma autómatica el elemento se le
+      ponga un margin de tal manera que quede centrado en el elemento en el que
+      se encuentra metido por ejemplo, si tienes una lista metida en el body y
+      pones margin auto en derecha e izquierda se pondrá en el centrada. Es útil
+      cuando a la lista le defines un width diferente del que viene por defecto.
+      Si quieres tener una lista con un widht más pequeño necesitaras lo de auto
+      para que se centre.
+    </p>
+    <h1>HTML layouts</h1>
+    <p>
+      Dentro del código es importante separar bien cada una de las partes de
+      nuestra web. En el elemento header podemos poner los elementos que van al
+      principio y que le dan nombre a la web. En el elemento main podemos poner
+      los elementos principales, donde esta la clave de la web. En el footer
+      podemos poner las partes menos importantes como información adicional. Más
+      información
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure"
+        >aquí</a
+      >.
+    </p>
+    <h1>Selectors y combinators</h1>
+    <p>
+      Ojo porque hay cosas importantes. Imaginate que dentro de un elemento A
+      tienes otro elemento B y quieres que el elemento B se vea diferente solo
+      cuando esta dentro del elemento A. Lo que tienes que hacer en CSS es
+      poner:
+      <br />
+      A B {}
+      <br />
+      Así estás cambiando el estilo de los elementos B que están dentro de A.
+    </p>
+    <h1>Entiendo las clases</h1>
+    <p>
+      Puedes crear una clase y después aplicársela a cualquier objeto. Es como
+      un id, la diferencia es que el id solo se puede aplicar a un elemento y la
+      clase se puede aplicar a muchos elementos independientemente del elemento
+      que se trate. Realmente puedes hacer magia con esto de las clases y
+      manejarlas como te de la real gana.
+    </p>
+    <h1>Block vs Inline elements</h1>
+    <p>
+      Ojo, porque si poner un párrafo y despues otro párrafo se ponen uno debajo
+      del otro porque son block elements que ocupan todo el widht de la página
+      web. Sin embargo, si pones un anchor tag ("a") y después otro se ponen uno
+      al lado del otro porque son inline elements que no ocupan todo el espacio
+      de la web.
+      <br />
+      <br />
+      Algunos inline elements comunes: a; button; img; span;
+      <br />
+      <br />
+      El span es para marcar una parte de un texto en concreto y poder cambiar
+      su estilo.
+      <br />
+      Más información
+      <a
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements"
+        >aquí</a
+      >
+    </p>
+  </body>
+</html>

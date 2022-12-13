@@ -1,0 +1,62 @@
+/* Podemos poner todo el estilo en otra página distinta*/
+body {
+  text-align: center;
+  background-color: rgb(233, 215, 207);
+  margin: 50px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+h1 {
+  font-family: serif;
+  font-size: 40pt;
+}
+
+/* 
+  Aquí conseguimos que el h1 se ponga grande solo cuando tengamos 
+  el ratón encima, es bastante tocho esto. También hacemos que el ratón
+  se ponga con la mano cuando lo pongamos encima de h1.
+*/
+
+h1:hover {
+  cursor: pointer;
+}
+
+p {
+  text-align: justify;
+  margin-left: 100pt;
+  margin-right: 100pt;
+  font-size: 20pt;
+}
+
+a {
+  color: rgba(53, 122, 10, 0.51);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#second-p {
+  text-align: center;
+  font-family: "Fira sans";
+}
+
+#first-p {
+  text-align: center;
+  color: rgb(177, 34, 34);
+  font-weight: 800;
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+}
+
+#third-p {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Fira sans";
+}

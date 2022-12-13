@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="latex_styles.css" />
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+        svg: {
+          fontCache: "global",
+        },
+      };
+    </script>
+    <script
+      type="text/javascript"
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"
+    ></script>
+    <title>Operaciones con matrices</title>
+  </head>
+
+  <body>
+    <h1>Recordatorio del término matriz</h1>
+
+    <p>
+      Una matriz es simplemente una lista ordenada de números. Podemos
+      representar una matriz de tamaño $m\times n$ usando la siguiente notación:
+      <br />
+      $$ A = \begin{bmatrix} a_{11} & a_{12} & ... & a_{1n}\\ a_{11} & a_{12} &
+      ... & a_{1n}\\ \vdots & \vdots & \vdots & \vdots\\ a_{11} & a_{12} & ... &
+      a_{1n} \end{bmatrix} $$
+      <br />
+      Podemos decir que la entrada $a_{ij}$ de nuestra matriz es la situada en
+      la fila número $i$ y columna número $j$ de $A$. Cada entrada de la matriz
+      será un simple número real. Recuerda que los números reales son todos los
+      que están entre menos infinito e infinito y los podemos denotar así:
+      <br />
+      $$\mathbb{R} = \{x: -\infty < x < \infty \}$$
+      <br />
+    </p>
+  </body>
+</html>
