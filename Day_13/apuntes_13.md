@@ -42,3 +42,29 @@ en la nube.
 
 - Además, si haces cambios desde la nube y después quieres traerlos a lo local
 lo que tendrás que escribir será: *git pull origin main*.
+
+- También puedes añadir un colaborador a tu proyecto, si en algún momento quieres
+saber como vete al vídeo 111 del curso. De momento con lo que sabes creo que puedes ir 
+tirando bastante bien 
+
+- Recuerda que también puedes **clonar** un repositorio que esté en github 
+para tenerlo de manera local. Simplemente copiar la url asociada a dicho 
+repositorio y en el terminal escribes *git clone "url"* y se clonará todo 
+el repositorio. Es una forma sencilla de acceder a proyectos de otros 
+desarrolladores
+
+
+# Contribuyendo a proyectos
+
+- También podemos contribuir a proyectos open source. Es decir, podemos 
+sugerir cambios a un desarrollador en su proyecto. Así podemos ayudar 
+a solucionar bugs y mejorar ciertas movidas.
+
+- Simplemente le damos a **fork** y guardamos el repositorio de otra persona 
+en nuestra cuenta de github. Como está en nuestra cuenta ahora podemos 
+acceder a él de manera remota desde nuestro ordenador con el personal 
+acces que hayamos creado. 
+
+- Una vez lo hayamos cambiado le damos a pull request y la magia ocurre. 
+Si alguna vez te interesa copiar un código de otra persona mira el vídeo 
+112 del curso
